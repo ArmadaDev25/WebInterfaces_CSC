@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Link to the main stylesheet-->
+        <link rel="stylesheet" href="style.css">
         <title>Hi, I'm John</title>
     </head>
     <body>
-        <div>
-            <!-- This Side will have the picture of me -->
-            <img src="/1.2_ReviewAndPractice/Assets/ProfilePic.png" alt="Girl in a jacket" width="50%" height="100%">
-            <!-- This Side will have the content -->
-            <div>
-                <header>
-                    <h1>John Kvassay</h1>
-                </header>
+        
+        <!-- This Side will have the picture of me -->
+        <img src="/1.2_ReviewAndPractice/Assets/ProfilePic.png" alt="Picture of John Kvassay" width="50%" height="100%">
+        <!-- This Side will have the content -->
+        <div class="TextContent">
+            <header>
+                <h1 style="font-family:verdana" id="name"></h1>
+            </header>
 
-                <main>
-                    <p>This is the main content area.</p>
-                </main>
+            <!--This is the section that contains all of the needed information about me-->
+            <main>
+                <h2 style="font-family:verdana">About Me</h2>
+                <h3 style="font-family:verdana">Major</h3>
+                <p style="font-family:verdana" id="major"></p>
+                <h3 style="font-family:verdana">Email</h3>
+                <p style="font-family:verdana" id="uatemail"></p>
+                <h3 style="font-family:verdana">Graduation Date</h3>
+                <p style="font-family:verdana" id="graddate"></p>
+            </main>
 
-                <footer>
-                    <p>&copy; 2025 John K. All rights reserved.</p>
-                </footer>
-            </div>
+         
         </div>
-
-
+        
+        <!-- JavaScript Code Goes Here-->
+        <script>
+            document.getElementById("name").innerText="John Kvassay";
+            document.getElementById("major").innerText=" Advancing Computer Science";
+            document.getElementById("uatemail").innerText="johkvass@uat.edu";
+            document.getElementById("graddate").innerText="January 2026";
+        </script>  
     </body>
 </html>
