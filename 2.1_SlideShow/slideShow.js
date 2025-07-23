@@ -1,5 +1,5 @@
 // Variable that holds the current image index
-let currentIndex = 0;
+let currentIndex = 2;
 
 // Holds the location of the images
 let imageArray = [
