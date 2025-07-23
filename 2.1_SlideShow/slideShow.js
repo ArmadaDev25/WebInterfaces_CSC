@@ -3,16 +3,21 @@ let currentIndex = 0;
 
 // Holds the location of the images
 let imageArray = [
-    "assets/DWKnight.png"
+    "assets/DWKnight.png",
 
 
 ]
+let nameArray = [
+    "Deathwing Knight"
+]
 
-// Image that displays the function
+// Image that displays the Image with Text under it
 function displayImage(index){
     let slide = document.getElementById("imgSlide");
     slide.src = imageArray[index];
-
+    // Sets the Text under the image
+    document.getElementById("imageName").innerText = nameArray[index];
 }
 
+// This will set the image and the text of the slide to the first element of each array when the webpage is opened
 displayImage(currentIndex);
