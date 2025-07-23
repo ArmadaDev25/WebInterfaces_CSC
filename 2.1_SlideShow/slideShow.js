@@ -10,6 +10,7 @@ let imageArray = [
 
 
 ]
+// Holds the Text Associated with each image
 let nameArray = [
     "Deathwing Knight",
     "Hellbrute",
@@ -23,6 +24,21 @@ function displayImage(index){
     slide.src = imageArray[index];
     // Sets the Text under the image
     document.getElementById("imageName").innerText = nameArray[index];
+}
+
+// These functions change which slide is being displayed
+function nextSlide(){
+    currentIndex++;
+    // Calls ths displayImage function to show the image and associated text
+    displayImage(currentIndex);
+
+}
+
+function previousSlide(){
+    currentIndex--;
+    // Calls ths displayImage function to show the image and associated text
+    displayImage(currentIndex);
+
 }
 
 // This will set the image and the text of the slide to the first element of each array when the webpage is opened
