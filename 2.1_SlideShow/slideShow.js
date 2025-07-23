@@ -29,6 +29,7 @@ function displayImage(index){
 // These functions change which slide is being displayed
 function nextSlide(){
     currentIndex++;
+    checkIfInArray()
     // Calls ths displayImage function to show the image and associated text
     displayImage(currentIndex);
 
@@ -36,10 +37,23 @@ function nextSlide(){
 
 function previousSlide(){
     currentIndex--;
+    checkIfInArray()
     // Calls ths displayImage function to show the image and associated text
     displayImage(currentIndex);
+    
 
 }
+// This function makes sure that the currentIndex Variable stays within the array
+function checkIfInArray(){
+    // Logic for if the index array goes above the number of entries within the imageArray variable
+    if (currentIndex > imageArray.length -1){
+        currentIndex = 0;
+    }
+    // Logic for if the currentIndex variable goes below 0
+    if (currentIndex < 0){
+        currentIndex = imageArray.length -1;
+    }
 
+}
 // This will set the image and the text of the slide to the first element of each array when the webpage is opened
 displayImage(currentIndex);
