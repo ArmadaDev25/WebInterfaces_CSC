@@ -4,11 +4,17 @@ let currentIndex = 0;
 // Holds the location of the images
 let imageArray = [
     "assets/DWKnight.png",
+    "assets/Hellbrute.png",
+    "assets/logangSW.png",
+    "assets/SWTerminator.png",
 
 
 ]
 let nameArray = [
-    "Deathwing Knight"
+    "Deathwing Knight",
+    "Hellbrute",
+    "Logan Grimnar",
+    "Wolf Guard Terminator",
 ]
 
 // Image that displays the Image with Text under it
