@@ -4,5 +4,10 @@ img{
 }
 
 h1{
-    
+    color: green;
+}
+body{
+    background-color: rgb(217, 252, 166);
+    /*Centers everything on the page*/
+    text-align: center;
 }
