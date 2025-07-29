@@ -4,4 +4,7 @@
 ## 2.1 Slideshow
 Link to Files: https://github.com/ArmadaDev25/WebInterfaces_CSC/tree/main/2.1_SlideShow
 ### ScreenShots
-<img width="544" height="455" alt="2_1Png" src="https://github.com/user-attachments/assets/ddc01da0-283a-4be8-ab1c-16bdf7856dff" />
+<img width="544" height="455" alt="2_1Png" src="https://github.com/user-attachments/assets/ddc01da0-283a-4be8-ab1c-16bdf7856dff" /> <br>
+## 3.1
+### ScreenShots
+<img width="386" height="262" alt="3 1" src="https://github.com/user-attachments/assets/2496d905-9172-4bc9-8c4e-c22d39ec88d4" />
