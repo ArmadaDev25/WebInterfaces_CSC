@@ -8,23 +8,23 @@
 
     </head>
     <header>   
-        <div class="mainheader">
+        <div class="mainheader" style="font-family:verdana">
             <h1>The Best Games </h1>
             <h2>On Steam</h2>
         </div>
     </header>
     <body>
-        <h3>Add your FAVORITE Game</h3>
+        <h3 style="font-family:verdana">Add your FAVORITE Game</h3>
         <!-- Input Section -->
-        <label for="txtGameName">Type the Game Name:</label>
+        <label for="txtGameName" style="font-family:verdana">Type the Game Name:</label>
         <input type="text" id="txtGameName" name="txtGameName" placeholder="Game Name">
         <div>
             <button type="submit" onclick="addGame();"> Add Game</button>
             <button type="submit" onclick="clearList();"> Clear List</button>
         </div>
-        <h1>Best Games List</h1>
+        <h1 style="font-family:verdana">Best Games List</h1>
         <!--Contains the List of Games-->
-        <div id="gameList"></div>
+        <div id="gameList" style="font-family:verdana"></div>
         <script src="DataLogic.js"></script>
     </body>
 
