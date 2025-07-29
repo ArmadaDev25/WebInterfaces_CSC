@@ -4,14 +4,18 @@
 
     </head>
     <header>   
-        <h1>The Best Games On Steam</h1>
-        <h2>In the Galaxy</h2>
+        <div>
+            <h1>The Best Games </h1>
+            <h2>On Steam</h2>
+        </div>
     </header>
     <body>
-        <h3>Type a game in to add it to the list</h3>
+        <h3>Add your FAVORITE Game</h3>
         <!-- Input Section -->
-         <input type="gameName" placeholder="Game Name">
-        
+        <label for="txtGameName">Type the Game Name:</label>
+        <input type="text" id="txtGameName" name="txtGameName" placeholder="Game Name">
+        <button type="submit" onclick="addGame();"> Add Game</button>
+        <button type="submit" onclick="clearList();"> Clear List</button>
     </body>
 
 </html>
