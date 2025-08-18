@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #divBoard{
+                width: 400px;
+                height: 400px;
+                border: 1px solid black;
+
+            }
+            .boardSquare{
+                float: left;
+                width: 50px;
+                height: 50px;
+            }
+            .boardSquareAlt{
+                background-color: black;
+            }
+
+            .piece{
+                width: 45px;
+                height: 45px;
+                margin: 1px;
+                border-radius: 50%;
+            }
+
+            /* Different Color Pieces*/
+        </style>
+
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <!-- this div will be the container (parent) for the game board-->
+            <div id="divBoard"></div>
+        </main>
+        <!-- JavaScript Code-->
+        <script>
+            let divBoard = document.getElementById("divBoard");
+
+            // Create an array to mimic the game board and the default positioning of pieces
+            let arrPieces = [
+                [null, i, null, i, null, i, null, i],
+                [i, null, i, null, i, null, i, null],
+                [null, i, null, i, null, i, null, i],
+                [null, null, null, null, null, null, null, null],
+                [null, null, null, null, null, null, null, null],
+                [g, null, g, null, g, null, g, null],
+                [null, g, null, g, null, g, null, g],
+                [g, null, g, null, g, null, g, null],
+            ]
+
+            // loop through 8 rows
+            for (let i=0; i<8; i++){
+                // loop through 8 columns
+                for (let j=0; j<8; j++){
+                    // create a new div for the board square
+                    let divBoardSquare = document.createElement("div");
+                    // assign the boardSquare css class to each
+                    divBoardSquare.classList.add("boardSquare");
+
+                    if((i+j) % 2 ==0 ){
+                        divBoardSquare.classList.add("boardSquareAlt");
+
+                    }
+
+
+                    // Add the new div square to the board
+                    divBoard.appendChild(divBoardSquare);
+
+                }
+            }
+
+        </script>
+    </body>
+</html>
