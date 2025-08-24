@@ -1,0 +1,35 @@
+h1{
+    margin: 0;
+    padding: 15px;
+    background-color: black;
+    color: aliceblue;
+}
+h2{
+    padding-left: 15px;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    
+}
+form{
+    padding-left: 20px;
+}
+.formbutton {
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 141, 141);
+    color: aliceblue;
+    border-width: 0cap;
+}
+.outputArea{
+    text-align: center;
+    padding: 15px;
+}
+.infoSection{
+    display: flex;
+    justify-content: space-around; 
+}

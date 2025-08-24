@@ -6,14 +6,13 @@
         <link rel="stylesheet" href="style.css">
 
     </head>
-    <header>   
+    
+    <body style="font-family:verdana">
         <div style="font-family:verdana">
             <h1>Game Server DB </h1>
         </div>
         <h2>Edit Player Info</h2>
-
-    </header>
-    <body style="font-family:verdana">
+        <div>
         <form name="playerInfoForm" id="playerInfoForm" method="post" action="#" onsubmit="return processPlayerInfo()">
             <label for="uname">Username: </label>
             <input type="text" id="uname" name="uname"><br><br>
@@ -23,10 +22,12 @@
             <input type="text" id="ulevel" name="ulevel"><br><br>
             <label for="ufs">Fighting Style: </label>
             <input type="text" id="ufs" name="ufs"><br><br>
+            <label for="umana">Mana: </label>
+            <input type="text" id="umana" name="umana"><br><br>
             <!--Submitt Button-->
-            <input type="submit" value="Update Info">
+            <input type="submit" class="formbutton" value="Update Info">
         </form>
-        <div id="outputArea">
+        <div id="outputArea" class="outputArea">
             <div>Player Info</div>
             <div class="infoSection">
                 <div id="playerInfoOutputTitles"></div>
