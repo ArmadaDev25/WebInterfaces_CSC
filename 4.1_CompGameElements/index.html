@@ -14,17 +14,25 @@
 
     </header>
     <body style="font-family:verdana">
-        <label for="fname">Username: </label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="fname">Class: </label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="fname">Current Level: </label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="fname">Fighting Style: </label>
-        <input type="text" id="fname" name="fname"><br><br>
-        
-        
-        
+        <form name="playerInfoForm" id="playerInfoForm" method="post" action="#" onsubmit="return processPlayerInfo()">
+            <label for="uname">Username: </label>
+            <input type="text" id="uname" name="uname"><br><br>
+            <label for="uclass">Class: </label>
+            <input type="text" id="uclass" name="uclass"><br><br>
+            <label for="ulevel">Current Level: </label>
+            <input type="text" id="ulevel" name="ulevel"><br><br>
+            <label for="ufs">Fighting Style: </label>
+            <input type="text" id="ufs" name="ufs"><br><br>
+            <!--Submitt Button-->
+            <input type="submit" value="Update Info">
+        </form>
+        <div id="outputArea">
+            <div>Player Info</div>
+            <div class="infoSection">
+                <div id="playerInfoOutputTitles"></div>
+                <div id="playerInfoOutput"></div>
+            </div>
+        </div> 
         <script src="logic.js"></script>
     </body>
 
